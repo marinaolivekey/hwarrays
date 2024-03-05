@@ -43,7 +43,6 @@ public class StatService {
 
     public int countMonthMin(long[] sales) {
         int count = 0;
-        long salesAv = AverageSales(sales);
         for (int i = 0; i < sales.length; i++) {
             if (sales[i] < AverageSales(sales)) {
                 count++;
